@@ -4,7 +4,7 @@ function diamond(letter) {
     var endCount = 2
     var output = ''
     var space = ' '
-    for (let i = 0; i <= curCount; i++) {
+    for (let i = 0; i <= letters.indexOf(letter); i++) {
         let curLetter = letters[i]
         if (curLetter == 'a') {
             output += space.repeat(curCount) + 'a' + space.repeat(curCount) + "\n"
