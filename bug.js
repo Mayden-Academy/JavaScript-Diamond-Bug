@@ -12,7 +12,6 @@ function diamond(letter) {
         } else if (letter == curLetter) {
             let end = [...output].reverse().join('')
             output += space.repeat(curCount) + curLetter + space.repeat(endCount) + curLetter + end
-            break
         } else {
           output += space.repeat(curCount) + curLetter + space.repeat(endCount) + curLetter + space.repeat(curCount) + "\n"
           curCount--
